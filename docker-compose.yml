@@ -1,0 +1,11 @@
+services:
+  db:
+    container_name: db_parking
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER: super_user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: super_db
+    ports:
+      - 5432:5432
+
